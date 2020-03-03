@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+-->
+<resources>
+
+    <declare-styleable name="TextAppearance">
+        <attr name="android:textSize"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textColorHint"/>
+        <attr name="android:textColorLink"/>
+        <attr name="android:textStyle"/>
+        <attr name="android:typeface"/>
+        <attr name="android:fontFamily"/>
+        <attr name="fontFamily"/>
+        <attr name="textAllCaps"/>
+        <attr name="android:shadowColor"/>
+        <attr name="android:shadowDy"/>
+        <attr name="android:shadowDx"/>
+        <attr name="android:shadowRadius"/>
+    </declare-styleable>
+
+    <declare-styleable name="TabLayout">
+        <!-- Color of the indicator used to show the currently selected tab. -->
+        <attr name="tabIndicatorColor" format="color"/>
+        <!-- Height of the indicator used to show the currently selected tab. -->
+        <attr name="tabIndicatorHeight" format="dimension"/>
+        <!-- Position in the Y axis from the starting edge that tabs should be positioned from. -->
+        <attr name="tabContentStart" format="dimension"/>
+        <!-- Reference to a background to be applied to tabs. -->
+        <attr name="tabBackground" format="reference"/>
+        <!-- The behavior mode for the Tabs in this layout -->
+        <attr name="tabMode">
+            <enum name="scrollable" value="0"/>
+            <enum name="fixed" value="1"/>
+        </attr>
+        <!-- Gravity constant for tabs. -->
+        <attr name="tabGravity">
+            <enum name="fill" value="0"/>
+            <enum name="center" value="1"/>
+        </attr>
+        <!-- The minimum width for tabs. -->
+        <attr name="tabMinWidth" format="dimension"/>
+        <!-- The maximum width for tabs. -->
+        <attr name="tabMaxWidth" format="dimension"/>
+        <!-- A reference to a TextAppearance style to be applied to tabs. -->
+        <attr name="tabTextAppearance" format="reference"/>
+        <!-- The default text color to be applied to tabs. -->
+        <attr name="tabTextColor" format="color"/>
+        <!-- The text color to be applied to the currently selected tab. -->
+        <attr name="tabSelectedTextColor" format="color"/>
+        <!-- The preferred padding along the start edge of tabs. -->
+        <attr name="tabPaddingStart" format="dimension"/>
+        <!-- The preferred padding along the top edge of tabs. -->
+        <attr name="tabPaddingTop" format="dimension"/>
+        <!-- The preferred padding along the end edge of tabs. -->
+        <attr name="tabPaddingEnd" format="dimension"/>
+        <!-- The preferred padding along the bottom edge of tabs. -->
+        <attr name="tabPaddingBottom" format="dimension"/>
+        <!-- The preferred padding along all edges of tabs. -->
+        <attr name="tabPadding" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="TabItem">
+        <!-- Text to display in the tab. -->
+        <attr name="android:text"/>
+        <!-- Icon to display in the tab. -->
+        <attr name="android:icon"/>
+        <!-- A reference to a layout resource to be displayed in the tab. -->
+        <attr name="android:layout"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwitchCompat">
+        <!-- Drawable to use as the "thumb" that switches back and forth. -->
+        <attr name="android:thumb" />
+        <!-- Tint to apply to the thumb drawable. -->
+        <attr name="thumbTint" format="color" />
+        <!-- Blending mode used to apply the thumb tint. -->
+        <attr name="thumbTintMode">
+            <!-- The tint is drawn on top of the drawable.
+                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+            <enum name="src_over" value="3" />
+            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+                 color channels are thrown out. [Sa * Da, Sc * Da] -->
+            <enum name="src_in" value="5" />
+            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+            <enum name="src_atop" value="9" />
+            <!-- Multiplies the color and alpha channels of the drawable with those of
+                 the tint. [Sa * Da, Sc * Dc] -->
+            <enum name="multiply" value="14" />
+            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+            <enum name="screen" value="15" />
+            <!-- Combines the tint and drawable color and alpha channels, clamping the
+                 result to valid color values. Saturate(S + D) -->
+            <enum name="add" value="16" />
+        </attr>
+        <!-- Drawable to use as the "track" that the switch thumb slides within. -->
+        <attr name="track" format="reference" />
+        <!-- Tint to apply to the track. -->
+        <attr name="trackTint" format="color" />
+        <!-- Blending mode used to apply the track tint. -->
+        <attr name="trackTintMode">
+            <!-- The tint is drawn on top of the drawable.
+                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+            <enum name="src_over" value="3" />
+            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+                 color channels are thrown out. [Sa * Da, Sc * Da] -->
+            <enum name="src_in" value="5" />
+            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+            <enum name="src_atop" value="9" />
+            <!-- Multiplies the color and alpha channels of the drawable with those of
+                 the tint. [Sa * Da, Sc * Dc] -->
+            <enum name="multiply" value="14" />
+            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+            <enum name="screen" value="15" />
+            <!-- Combines the tint and drawable color and alpha channels, clamping the
+                 result to valid color values. Saturate(S + D) -->
+            <enum name="add" value="16" />
+        </attr>
+        <!-- Text to use when the switch is in the checked/"on" state. -->
+        <attr name="android:textOn" />
+        <!-- Text to use when the switch is in the unchecked/"off" state. -->
+        <attr name="android:textOff" />
+        <!-- Amount of padding on either side of text within the switch thumb. -->
+        <attr name="thumbTextPadding" format="dimension" />
+        <!-- TextAppearance style for text displayed on the switch thumb. -->
+        <attr name="switchTextAppearance" format="reference" />
+        <!-- Minimum width for the switch component -->
+        <attr name="switchMinWidth" format="dimension" />
+        <!-- Minimum space between the switch and caption text -->
+        <attr name="switchPadding" format="dimension" />
+        <!-- Whether to split the track and leave a gap for the thumb drawable. -->
+        <attr name="splitTrack" format="boolean" />
+        <!-- Whether to draw on/off text. -->
+        <attr name="showText" format="boolean" />
+    </declare-styleable>
+
+</resources>

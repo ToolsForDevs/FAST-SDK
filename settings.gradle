@@ -1,0 +1,98 @@
+apply from: "./gradleFiles/fast.gradle"
+apply from: "./gradleFiles/config.gradle"
+apply from: "./gradleFiles/dependencies.gradle"
+
+include fast.core.fast,
+        fast.core.core,
+        fast.core.annotations,
+        fast.core.processor,
+
+        fast.modules.androidx,
+        fast.modules.androidx_recyclerview,
+        fast.modules.codegenerator,
+        fast.modules.formatters,
+        fast.modules.recyclerview,
+        fast.modules.resourcepicker,
+        fast.modules.resources,
+        fast.modules.restart,
+        fast.modules.subheader,
+        fast.core.ui,
+        fast.modules.viewhierarchyexplorer
+
+if (config.plugins.actions)
+{
+    include fast.plugins.actions.actions,
+            fast.plugins.actions.base,
+            fast.plugins.actions.noop
+
+}
+
+if (config.plugins.crashinfo) {
+    include fast.plugins.crashinfo.crashinfo
+}
+
+if (config.plugins.environmentswitch) {
+    include fast.plugins.environmentswitch.environmentswitch
+    include fast.plugins.environmentswitch.noop
+}
+
+if (config.plugins.fileexplorer) {
+    include fast.plugins.fileexplorer.fileexplorer
+}
+
+if (config.plugins.logger) {
+    include fast.plugins.logger.logger,
+            fast.plugins.logger.ext,
+            fast.plugins.logger.timber,
+            fast.plugins.logger.noop
+}
+
+if (config.plugins.manifestexplorer)
+    include fast.plugins.manifestexplorer.manifestexplorer
+
+if (config.plugins.networkexplorer) {
+    include fast.plugins.networkexplorer.networkexplorer
+    include fast.plugins.networkexplorer.core
+    include fast.plugins.networkexplorer.okhttp
+}
+
+if (config.plugins.overlay) {
+    include fast.plugins.overlay.overlay
+}
+
+if (config.plugins.resourceexplorer) {
+    include fast.plugins.resourceexplorer.resourceexplorer
+}
+
+if (config.plugins.restart) {
+    include fast.plugins.restart.restart
+}
+
+if (config.plugins.sessionmanager) {
+    include fast.plugins.sessionmanager.sessionmanager
+    include fast.plugins.sessionmanager.noop
+}
+
+if (config.plugins.sharedprefs) {
+    include fast.plugins.sharedprefs.sharedprefs
+}
+
+if (config.plugins.viewinspector) {
+    include fast.plugins.viewinspector.viewinspector,
+            fast.plugins.viewinspector.ext,
+            fast.plugins.viewinspector.androidframework,
+            fast.plugins.viewinspector.appcompat,
+            fast.plugins.viewinspector.cardview,
+            fast.plugins.viewinspector.coordinatorlayout,
+            fast.plugins.viewinspector.core,
+            fast.plugins.viewinspector.drawerlayout,
+            fast.plugins.viewinspector.materialcomponents,
+            fast.plugins.viewinspector.recyclerview,
+            fast.plugins.viewinspector.viewpager
+}
+
+if (config.plugins.windowflags) {
+    include fast.plugins.windowflags.windowflags
+}
+
+rootProject.name='Freaking Awesome Super Toolbox'

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fast_resourcepicker_menu_mm" type="id"/>
+    <item name="fast_resourcepicker_menu_in" type="id"/>
+    <item name="fast_resourcepicker_menu_pt" type="id"/>
+    <item name="fast_resourcepicker_menu_px" type="id"/>
+    <item name="fast_resourcepicker_menu_sp" type="id"/>
+    <item name="fast_resourcepicker_menu_dp" type="id"/>
+    <item name="fast_resourcepicker_menu_dd" type="id"/>
+</resources>

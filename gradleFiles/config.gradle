@@ -1,0 +1,30 @@
+def config = [:]
+
+    def android = [:]
+        android.minSdkVersion = 21
+        android.targetSdkVersion = 29
+        android.compileSdkVersion = 29
+        android.versionCode = 1
+        android.versionName = "0.9.6"
+    config.android = android
+
+    def plugins = [:]
+        plugins.actions             = true
+        plugins.crashinfo           = true
+        plugins.environmentswitch   = true
+        plugins.filexplorer         = true
+        plugins.logger              = true
+        plugins.manifestexplorer    = true
+        plugins.networkexplorer     = true
+        plugins.overlay             = true
+        plugins.resourceexplorer    = true
+        plugins.restart             = true
+        plugins.sessionmanager      = true
+        plugins.sharedprefs         = true
+        plugins.viewinspector       = true
+        plugins.windowflags         = true
+    config.plugins = plugins
+
+ext.config = config
+ext.libraryVersion = "0.1.0"
+

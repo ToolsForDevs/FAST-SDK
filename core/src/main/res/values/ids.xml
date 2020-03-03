@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fast_core_fast_container" type="id"/>
+    <item name="fast_core_view_container" type="id"/>
+    <item name="fast_core_overlay_container" type="id"/>
+    <item name="fast_core_focus_view" type="id" />
+</resources>

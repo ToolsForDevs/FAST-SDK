@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.toolsfordevs.fast.core">
+
+    <application>
+        <!--  ${applicationId} in authorities is to make sure authority will be unique
+              even if FAST is integrated in several apps on a device
+              Otherwise, if app 1 already includes FAST and we try to install
+              app 2 with FAST, we would have two providers with the same authority,
+              hence getting install error -->
+        <provider
+                android:name="com.toolsfordevs.fast.core.internal.FastProvider"
+                android:authorities="com.toolsfordevs.fast.core.internal.fastprovider.${applicationId}"
+                android:directBootAware="true"
+                android:exported="false"
+                android:initOrder="900"
+                tools:ignore="UnusedAttribute"/>
+    </application>
+</manifest>

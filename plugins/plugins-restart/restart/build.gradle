@@ -1,0 +1,8 @@
+dependencies {
+    implementation deps.kotlin
+    kapt project(fast.core.processor)
+    api project(fast.core.core)
+    api project(fast.modules.restart)
+}
+
+apply from: 'https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/master/gradle-mavenizer.gradle'

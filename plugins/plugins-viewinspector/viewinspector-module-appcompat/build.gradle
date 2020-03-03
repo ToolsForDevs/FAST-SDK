@@ -1,0 +1,11 @@
+dependencies {
+    implementation deps.kotlin
+    implementation deps.androidx.appcompat
+    api project(fast.core.core)
+    api project(fast.core.annotations)
+    kapt project(fast.core.processor)
+    api project(fast.plugins.viewinspector.ext)
+    api project(fast.plugins.viewinspector.androidframework)
+}
+
+//apply from: 'https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/master/gradle-mavenizer.gradle'

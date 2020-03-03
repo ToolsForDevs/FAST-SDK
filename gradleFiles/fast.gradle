@@ -1,0 +1,102 @@
+def fast = [:]
+
+    def core = [:]
+        core.fast                               = ":fast"
+        core.core                               = ":core"
+        core.annotations                        = ":core-annotations"
+        core.processor                          = ":core-processor"
+        core.ui                                 = ":core-ui"
+    fast.core = core
+
+    def plugins = [:]
+        def actions = [:]
+            actions.actions                     = ":plugins:plugins-actions:actions"
+            actions.base                        = ":plugins:plugins-actions:actions-base"
+            actions.noop                        = ":plugins:plugins-actions:actions-no-op"
+        plugins.actions                         = actions
+
+        def crashinfo = [:]
+            crashinfo.crashinfo                 = ":plugins:plugins-crashinfo:crashinfo"
+        plugins.crashinfo                       = crashinfo
+
+        def environmentswitch = [:]
+            environmentswitch.environmentswitch = ":plugins:plugins-environmentswitch:environmentswitch"
+            environmentswitch.noop              = ":plugins:plugins-environmentswitch:environmentswitch-no-op"
+        plugins.environmentswitch               = environmentswitch
+
+        def fileexplorer = [:]
+            fileexplorer.fileexplorer           = ":plugins:plugins-fileexplorer:fileexplorer"
+        plugins.fileexplorer                    = fileexplorer
+
+        def logger = [:]
+            logger.logger                       = ":plugins:plugins-logger:logger"
+            logger.ext                          = ":plugins:plugins-logger:logger-ext"
+            logger.timber                       = ":plugins:plugins-logger:logger-timber"
+            logger.noop                         = ":plugins:plugins-logger:logger-no-op"
+        plugins.logger                          = logger
+
+        def manifestexplorer = [:]
+            manifestexplorer.manifestexplorer    = ":plugins:plugins-manifestexplorer:manifestexplorer"
+        plugins.manifestexplorer                 = manifestexplorer
+
+        def networkexplorer = [:]
+            networkexplorer.networkexplorer     = ":plugins:plugins-networkexplorer:networkexplorer"
+            networkexplorer.core                = ":plugins:plugins-networkexplorer:networkexplorer-core"
+            networkexplorer.okhttp              = ":plugins:plugins-networkexplorer:networkexplorer-module-okhttp"
+        plugins.networkexplorer                 = networkexplorer
+
+        def overlay = [:]
+            overlay.overlay                     = ":plugins:plugins-overlay:overlay"
+        plugins.overlay                         = overlay
+
+        def resourceexplorer = [:]
+            resourceexplorer.resourceexplorer   = ":plugins:plugins-resourceexplorer:resourceexplorer"
+        plugins.resourceexplorer                = resourceexplorer
+
+        def restart = [:]
+            restart.restart                     = ":plugins:plugins-restart:restart"
+        plugins.restart                         = restart
+
+        def sessionmanager = [:]
+            sessionmanager.sessionmanager       = ":plugins:plugins-sessionmanager:sessionmanager"
+            sessionmanager.noop                 = ":plugins:plugins-sessionmanager:sessionmanager-no-op"
+        plugins.sessionmanager                  = sessionmanager
+
+        def sharedprefs = [:]
+            sharedprefs.sharedprefs             = ":plugins:plugins-sharedprefs:sharedprefs"
+        plugins.sharedprefs                     = sharedprefs
+
+        def viewinspector = [:]
+            viewinspector.viewinspector         = ":plugins:plugins-viewinspector:viewinspector"
+            viewinspector.ext                   = ":plugins:plugins-viewinspector:viewinspector-ext"
+            viewinspector.androidframework      = ":plugins:plugins-viewinspector:viewinspector-androidframework"
+            viewinspector.appcompat             = ":plugins:plugins-viewinspector:viewinspector-module-appcompat"
+            viewinspector.cardview              = ":plugins:plugins-viewinspector:viewinspector-module-cardview"
+            viewinspector.coordinatorlayout     = ":plugins:plugins-viewinspector:viewinspector-module-coordinatorlayout"
+            viewinspector.core                  = ":plugins:plugins-viewinspector:viewinspector-module-androidx-core"
+            viewinspector.drawerlayout          = ":plugins:plugins-viewinspector:viewinspector-module-drawerlayout"
+            viewinspector.materialcomponents    = ":plugins:plugins-viewinspector:viewinspector-module-materialcomponents"
+            viewinspector.recyclerview          = ":plugins:plugins-viewinspector:viewinspector-module-recyclerview"
+            viewinspector.viewpager             = ":plugins:plugins-viewinspector:viewinspector-module-viewpager"
+        plugins.viewinspector = viewinspector
+
+        def windowflags = [:]
+            windowflags.windowflags             = ":plugins:plugins-windowflags:windowflags"
+        plugins.windowflags                     = windowflags
+
+    fast.plugins = plugins
+
+    def modules = [:]
+        modules.androidx                        = ":modules:modules-androidx"
+        modules.androidx_recyclerview           = ":modules:modules-androidx-recyclerview"
+        modules.codegenerator                   = ":modules:modules-codegenerator"
+        modules.formatters                      = ":modules:modules-formatters"
+        modules.recyclerview                    = ":modules:modules-recyclerview"
+        modules.resources                       = ":modules:modules-resources"
+        modules.resourcepicker                  = ":modules:modules-resourcepicker"
+        modules.restart                         = ":modules:modules-restart"
+        modules.subheader                       = ":modules:modules-subheader"
+        modules.viewhierarchyexplorer           = ":modules:modules-viewhierarchyexplorer"
+    fast.modules = modules
+
+ext.fast = fast

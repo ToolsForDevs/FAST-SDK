@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingStart="@dimen/fast_dp_8"
+              android:paddingEnd="@dimen/fast_dp_8"
+              android:baselineAligned="false">
+
+    <TextView
+            android:id="@+id/classname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:fontFamily="monospace"
+            android:paddingTop="@dimen/fast_dp_8"
+            android:paddingBottom="@dimen/fast_dp_8"
+            android:textColor="@color/fast_md_black_100"
+            android:textSize="8sp"/>
+
+    <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/fast_md_black_12"
+            android:layout_marginStart="@dimen/fast_dp_8"
+            android:layout_marginEnd="@dimen/fast_dp_8"/>
+
+    <TextView
+            android:id="@+id/method"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:fontFamily="monospace"
+            android:paddingTop="@dimen/fast_dp_8"
+            android:paddingBottom="@dimen/fast_dp_8"
+            android:textColor="@color/fast_md_black_100"
+            android:textSize="8sp"/>
+
+    <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/fast_md_black_12"
+            android:layout_marginStart="@dimen/fast_dp_8"
+            android:layout_marginEnd="@dimen/fast_dp_8"/>
+
+    <TextView
+            android:id="@+id/line"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:paddingTop="@dimen/fast_dp_8"
+            android:paddingBottom="@dimen/fast_dp_8"
+            android:textColor="@color/fast_md_black_100"
+            android:gravity="end"
+            android:textSize="8sp"/>
+</LinearLayout>

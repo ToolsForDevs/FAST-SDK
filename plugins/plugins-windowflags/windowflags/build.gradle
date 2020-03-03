@@ -1,0 +1,18 @@
+dependencies {
+    implementation deps.kotlin
+
+    annotationProcessor project(fast.core.processor)
+    kapt project(fast.core.processor)
+
+    api project(fast.core.core)
+    api project(fast.core.ui)
+
+    api project(fast.modules.androidx)
+    api project(fast.modules.androidx_recyclerview)
+    api project(fast.modules.codegenerator)
+    api project(fast.modules.recyclerview)
+    api project(fast.modules.resourcepicker)
+    api project(fast.modules.subheader)
+}
+
+apply from: 'https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/master/gradle-mavenizer.gradle'

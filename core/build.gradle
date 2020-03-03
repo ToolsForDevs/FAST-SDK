@@ -1,0 +1,7 @@
+dependencies {
+    implementation deps.kotlin
+    implementation deps.kotlin_reflect
+    api project(fast.core.annotations)
+}
+
+apply from: 'https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/master/gradle-mavenizer.gradle'

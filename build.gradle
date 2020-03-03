@@ -1,0 +1,109 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    apply from: "./gradleFiles/fast.gradle"
+    apply from: "./gradleFiles/dependencies.gradle"
+    apply from: "./gradleFiles/config.gradle"
+
+    addRepos(repositories)
+
+    ext.kotlin_version = '1.3.50'
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://repo.spring.io/plugins-snapshot' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+subprojects {
+    // it = module (app, core, gms_location, ...
+    logger.info('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX module name {}', it.name)
+    if (it.name != 'app'
+            && !it.name.startsWith('plugins-')
+            && it.name != 'plugins'
+            && it.name != 'modules'
+            && it.name != 'core-processor'
+            && it.name != 'core-annotations') {
+        apply plugin: 'com.android.library'
+        apply plugin: 'kotlin-android'
+        apply plugin: 'kotlin-android-extensions'
+        apply plugin: 'kotlin-kapt'
+
+        android {
+            compileSdkVersion config.android.compileSdkVersion
+
+            defaultConfig {
+                minSdkVersion config.android.minSdkVersion
+                targetSdkVersion config.android.targetSdkVersion
+//                versionCode config.android.versionCode
+//                versionName config.android.versionName
+            }
+
+            resourcePrefix 'fast_'
+
+            buildTypes {
+                release {
+                    minifyEnabled true
+                    proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro', "${project.rootProject.rootDir}/proguard-rules.pro"
+                    logger.info('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX module name {}', project.rootProject.rootDir)
+                }
+            }
+
+            compileOptions {
+                sourceCompatibility = JavaVersion.VERSION_1_8
+                targetCompatibility = JavaVersion.VERSION_1_8
+
+                kotlinOptions.freeCompilerArgs += ['-module-name', "$group.${project.name}"]
+            }
+        }
+
+        project.ext {
+            mavDevelopers = ["JG": "Jonathan Gerbaud"]
+            mavSiteUrl = "https://wwww.fast-sdk.com/"
+            mavGitUrl = 'https://github.com/ToolsForDevs/fast-beta'
+            mavProjectName = project.name
+            mavPublishToInternalRepo = false
+            mavRepoInternalUrl = "path/to/internal/repo"
+            mavLibraryLicenses = []
+            mavLibraryDescription = "FAST SDK"
+        }
+
+        group = 'com.toolsfordevs.fast-beta'
+        version = config.android.versionName
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    kotlinOptions {
+        jvmTarget = "1.8"
+        compilerArgs << '-Xlint:none'
+        compilerArgs << '-nowarn' // same as '-Xlint:none'
+    }
+}
+
+tasks.withType(JavaCompile) {
+    // Try to turn them all off automatically
+    options.compilerArgs << '-Xlint:none'
+    options.compilerArgs << '-nowarn' // same as '-Xlint:none'
+}

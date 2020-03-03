@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:baselineAligned="false">
+
+    <ViewSwitcher
+            android:id="@+id/view_switcher"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        <LinearLayout
+                android:id="@+id/toggle_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+            <Button
+                    android:id="@+id/button_match"
+                    android:paddingLeft="@dimen/fast_dp_2"
+                    android:paddingRight="@dimen/fast_dp_2"
+                    android:textColor="@color/fast_renderer_toggle_group_button_text_color"
+                    android:background="@drawable/fast_renderer_toggle_group_button_background"
+                    android:foreground="@drawable/fast_selectable_item_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MATCH"/>
+
+            <Button
+                    android:id="@+id/button_wrap"
+                    android:paddingLeft="@dimen/fast_dp_2"
+                    android:paddingRight="@dimen/fast_dp_2"
+                    android:foreground="@drawable/fast_selectable_item_background"
+                    android:textColor="@color/fast_renderer_toggle_group_button_text_color"
+                    android:background="@drawable/fast_renderer_toggle_group_button_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WRAP"/>
+
+        </LinearLayout>
+
+        <com.toolsfordevs.fast.core.ui.seekbar.TickSeekBar
+                android:id="@+id/seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:tsb_min="0"
+                app:tsb_max="256"
+                app:tsb_show_thumb_text="above"
+                app:tsb_tick_texts_color="@color/fast_md_black_100"
+                app:tsb_track_progress_color="@color/fast_md_black_100"
+                app:tsb_thumb_text_color="@color/fast_md_black_100"
+                app:tsb_thumb_color="@color/fast_md_black_100"
+                app:tsb_only_thumb_draggable="true"/>
+    </ViewSwitcher>
+
+    <ImageButton
+            android:id="@+id/switch_button"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/fast_selectable_item_background_borderless"
+            android:src="@drawable/fast_renderer_ic_arrow_split_vertical"/>
+
+</LinearLayout>

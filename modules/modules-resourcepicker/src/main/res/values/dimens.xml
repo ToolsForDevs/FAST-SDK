@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fast_resource_picker_common_dp_value_1">1dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_2">2dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_3">3dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_4">4dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_8">8dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_12">12dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_16">16dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_20">20dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_24">24dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_32">32dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_36">36dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_40">40dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_48">48dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_56">56dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_64">64dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_72">72dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_96">96dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_112">112dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_144">144dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_192">192dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_256">256dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_384">384dp</dimen>
+    <dimen name="fast_resource_picker_common_dp_value_512">512dp</dimen>
+
+    <dimen name="fast_resource_picker_common_sp_value_10">10sp</dimen>
+    <dimen name="fast_resource_picker_common_sp_value_11">11sp</dimen>
+    <dimen name="fast_resource_picker_common_sp_value_12">12sp</dimen>
+    <dimen name="fast_resource_picker_common_sp_value_14">14sp</dimen>
+    <dimen name="fast_resource_picker_common_sp_value_16">16sp</dimen>
+    <dimen name="fast_resource_picker_common_sp_value_18">18sp</dimen>
+    <dimen name="fast_resource_picker_common_sp_value_20">20sp</dimen>
+    <dimen name="fast_resource_picker_common_sp_value_24">24sp</dimen>
+    <dimen name="fast_resource_picker_common_sp_value_34">34sp</dimen>
+    <dimen name="fast_resource_picker_common_sp_value_48">48sp</dimen>
+    <dimen name="fast_resource_picker_common_sp_value_60">60sp</dimen>
+    <dimen name="fast_resource_picker_common_sp_value_96">96sp</dimen>
+</resources>

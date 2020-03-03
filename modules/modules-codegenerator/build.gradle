@@ -1,0 +1,11 @@
+dependencies {
+    implementation deps.kotlin
+
+    annotationProcessor project(fast.core.processor)
+    kapt project(fast.core.processor)
+
+    api project(fast.core.core)
+    api project(fast.core.ui)
+}
+
+apply from: 'https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/master/gradle-mavenizer.gradle'

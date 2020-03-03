@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="@dimen/fast_dp_48"
+              android:background="@drawable/fast_selectable_item_background"
+              android:paddingTop="@dimen/fast_dp_8"
+              android:paddingBottom="@dimen/fast_dp_8"
+              android:paddingStart="@dimen/fast_dp_8"
+              android:paddingEnd="@dimen/fast_dp_16"
+              android:gravity="center_vertical">
+
+        <ImageButton
+                android:id="@+id/icon"
+                android:layout_width="@dimen/fast_dp_40"
+                android:layout_height="@dimen/fast_dp_40"
+                android:padding="@dimen/fast_dp_8"
+                android:src="@drawable/fast_resourcepicker_ic_starred"
+                android:background="@drawable/fast_selectable_item_background_borderless"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/fast_sp_12"
+                android:textColor="@color/fast_md_black_100"
+                android:layout_marginStart="@dimen/fast_dp_8"
+                android:layout_marginEnd="@dimen/fast_dp_16"
+                tools:text="my_super_string_resource"
+                android:id="@+id/name"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fast_sp_12"
+                android:textColor="@color/fast_md_black_87"
+                tools:text="16dp"
+                android:id="@+id/value"/>
+
+</LinearLayout>

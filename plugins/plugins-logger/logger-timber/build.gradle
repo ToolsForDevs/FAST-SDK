@@ -1,0 +1,10 @@
+dependencies {
+    implementation deps.kotlin
+    kapt project(fast.core.processor)
+    api project(fast.plugins.logger.ext)
+    api project(fast.plugins.logger.logger)
+
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+}
+
+apply from: 'https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/master/gradle-mavenizer.gradle'

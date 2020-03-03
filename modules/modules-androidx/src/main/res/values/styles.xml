@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ToDo prefix with fast_-->
+    <!-- ToDo check commented lines in the style below (produce error when compiled alone) -->
+    <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
+        <item name="tabMaxWidth">@dimen/design_tab_max_width</item>
+        <!--<item name="tabIndicatorColor">?attr/colorAccent</item>-->
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <!--<<item name="tabBackground">@drawable/fast_selectable_item_background</item>-->
+        <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>
+        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="Widget.Design.TabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabGravity">fill</item>
+        <item name="tabMode">fixed</item>
+    </style>
+
+    <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColorHint">?android:textColorHint</item>
+        <item name="android:textColorHighlight">?android:textColorHighlight</item>
+        <item name="android:textColorLink">?android:textColorLink</item>
+        <item name="android:textSize">@dimen/abc_text_size_body_1_material</item>
+    </style>
+
+    <style name="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/abc_text_size_button_material</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Button" parent="Base.TextAppearance.AppCompat.Button" />
+
+    <style name="TextAppearance.Design.Tab" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/design_tab_text_size</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+</resources>

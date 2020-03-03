@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item-->
+<!--        android:id="@+id/fast_logger_menu_item_switch_formatter"-->
+<!--        android:title="Switch Formatter" />-->
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/fast_logger_menu_item_hide"
+                android:title="Hide Both"/>
+        <item
+                android:id="@+id/fast_logger_menu_item_method_call"
+                android:title="Show Method Call"/>
+        <item
+                android:id="@+id/fast_logger_menu_item_stack_trace"
+                android:title="Show Stack Trace"/>
+    </group>
+</menu>

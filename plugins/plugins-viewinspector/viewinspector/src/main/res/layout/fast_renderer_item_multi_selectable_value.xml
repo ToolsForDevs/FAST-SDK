@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/value"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/fast_sp_16"
+        android:textColor="@color/fast_md_black_100"
+        android:paddingStart="@dimen/fast_dp_8"
+        android:background="@drawable/fast_selectable_item_background"/>

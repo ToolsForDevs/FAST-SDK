@@ -1,0 +1,9 @@
+apply plugin: 'java-library'
+
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+group = 'com.toolsfordevs.fast-beta'
+version = config.android.versionName
+apply from: 'https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/master/gradle-mavenizer.gradle'

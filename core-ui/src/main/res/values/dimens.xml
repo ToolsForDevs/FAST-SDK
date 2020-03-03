@@ -1,0 +1,54 @@
+<resources>
+    <dimen name="fast_dp_1">1dp</dimen>
+    <dimen name="fast_dp_2">2dp</dimen>
+    <dimen name="fast_dp_3">3dp</dimen>
+    <dimen name="fast_dp_4">4dp</dimen>
+    <dimen name="fast_dp_6">6dp</dimen>
+    <dimen name="fast_dp_8">8dp</dimen>
+    <dimen name="fast_dp_10">10dp</dimen>
+    <dimen name="fast_dp_12">12dp</dimen>
+    <dimen name="fast_dp_16">16dp</dimen>
+    <dimen name="fast_dp_20">20dp</dimen>
+    <dimen name="fast_dp_24">24dp</dimen>
+    <dimen name="fast_dp_32">32dp</dimen>
+    <dimen name="fast_dp_36">36dp</dimen>
+    <dimen name="fast_dp_40">40dp</dimen>
+    <dimen name="fast_dp_48">48dp</dimen>
+    <dimen name="fast_dp_56">56dp</dimen>
+    <dimen name="fast_dp_64">64dp</dimen>
+    <dimen name="fast_dp_72">72dp</dimen>
+    <dimen name="fast_dp_96">96dp</dimen>
+    <dimen name="fast_dp_112">112dp</dimen>
+    <dimen name="fast_dp_144">144dp</dimen>
+    <dimen name="fast_dp_192">192dp</dimen>
+    <dimen name="fast_dp_256">256dp</dimen>
+    <dimen name="fast_dp_384">384dp</dimen>
+    <dimen name="fast_dp_512">512dp</dimen>
+
+
+    <dimen name="fast_sp_10">10sp</dimen>
+    <dimen name="fast_sp_12">12sp</dimen>
+    <dimen name="fast_sp_14">14sp</dimen>
+    <dimen name="fast_sp_16">16sp</dimen>
+    <dimen name="fast_sp_18">18sp</dimen>
+    <dimen name="fast_sp_20">20sp</dimen>
+    <dimen name="fast_sp_24">24sp</dimen>
+    <dimen name="fast_sp_34">34sp</dimen>
+    <dimen name="fast_sp_48">48sp</dimen>
+    <dimen name="fast_sp_60">60sp</dimen>
+    <dimen name="fast_sp_96">96sp</dimen>
+
+    <dimen name="fast_md_text_h1">96sp</dimen>
+    <dimen name="fast_md_text_h2">60sp</dimen>
+    <dimen name="fast_md_text_h3">48sp</dimen>
+    <dimen name="fast_md_text_h4">34sp</dimen>
+    <dimen name="fast_md_text_h5">24sp</dimen>
+    <dimen name="fast_md_text_h6">20sp</dimen>
+    <dimen name="fast_md_text_subtitle1">16sp</dimen>
+    <dimen name="fast_md_text_subtitle2">14sp</dimen>
+    <dimen name="fast_md_text_body1">16sp</dimen>
+    <dimen name="fast_md_text_body2">14sp</dimen>
+    <dimen name="fast_md_text_button">14sp</dimen>
+    <dimen name="fast_md_text_caption">12sp</dimen>
+    <dimen name="fast_md_text_overline">10sp</dimen>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.toolsfordevs.fast.core.ui.seekbar.TickSeekBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:tsb_min="0"
+        app:tsb_max="256"
+        app:tsb_show_thumb_text="above"
+        app:tsb_tick_texts_color="@color/fast_md_black_100"
+        app:tsb_track_progress_color="@color/fast_md_black_100"
+        app:tsb_thumb_text_color="@color/fast_md_black_100"
+        app:tsb_thumb_color="@color/fast_primary_color"
+        app:tsb_only_thumb_draggable="true"/>

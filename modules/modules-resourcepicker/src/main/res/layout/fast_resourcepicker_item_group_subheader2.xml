@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:background="@drawable/fast_selectable_item_background">
+
+    <TextView
+            android:id="@+id/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="@dimen/fast_dp_8"/>
+
+    <ImageButton
+            android:id="@+id/icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:src="@drawable/fast_resourcepicker_ic_chevron_down"/>
+</LinearLayout>

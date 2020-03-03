@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:id="@+id/view_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fast_primary_color"
+                    android:padding="@dimen/fast_dp_8"
+                    android:orientation="vertical">
+
+                <View
+                        android:layout_width="@dimen/fast_dp_24"
+                        android:layout_height="@dimen/fast_dp_2"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/fast_dp_4"
+                        android:background="@drawable/fast_view_inspector_header_handle" />
+
+                <TextView
+                        android:text="android.text.TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/fast_md_white_100"
+                        android:id="@+id/name"
+                        android:textSize="@dimen/fast_sp_18"
+                        android:singleLine="true"
+                        android:ellipsize="start"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/fast_primary_color"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/id"
+                            android:textColor="@color/fast_md_white_87"/>
+
+                    <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                    <TextView
+                            android:text="87 x 56 dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:id="@+id/size"
+                            android:textColor="@color/fast_md_white_100"
+                            android:gravity="end"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/button_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    android:background="@color/fast_primary_color"
+                    android:gravity="end">
+
+                <ImageButton
+                        android:id="@+id/pager_button"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/fast_view_inspector_ic_layout"
+                        android:background="@drawable/fast_selectable_item_background"
+                        android:foreground="@drawable/fast_view_inspector_pager_button_indicator"/>
+
+                <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                <Button
+                        android:id="@+id/button_unit"
+                        android:layout_width="48dp"
+                        android:textColor="@color/fast_md_white_100"
+                        android:layout_height="48dp"
+                        android:textSize="@dimen/fast_sp_16"
+                        android:fontFamily="sans-serif-medium"
+                        android:background="@drawable/fast_selectable_item_background"
+                        android:text="DP"/>
+
+                <ImageButton
+                        android:id="@+id/alpha_button"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:visibility="gone"
+                        android:src="@drawable/fast_view_inspector_ic_opacity"
+                        android:background="@drawable/fast_selectable_item_background"/>
+
+                <ImageButton
+                        android:id="@+id/visibility_button"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/fast_view_inspector_ic_eye_off"
+                        android:background="@drawable/fast_selectable_item_background"/>
+
+                <ImageButton
+                        android:id="@+id/lock_mode_button"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/fast_plugin_view_inspector_ic_lock"
+                        android:background="@drawable/fast_selectable_item_background"/>
+
+                <ImageButton
+                        android:id="@+id/toggle_mode_button"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/fast_view_inspector_ic_layout_mode"
+                        android:background="@drawable/fast_selectable_item_background"/>
+
+                <ImageButton
+                        android:id="@+id/size_button"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/fast_renderer_ic_chevron_up"
+                        android:background="@drawable/fast_selectable_item_background"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.toolsfordevs.fast.core.ui.widget.BottomSheetViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:background="@android:color/white"
+                tools:ignore="UnusedAttribute"/>
+
+    </LinearLayout>
+</merge>

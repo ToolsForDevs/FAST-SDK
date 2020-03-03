@@ -1,0 +1,5 @@
+<!-- drawable/view-compact.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/fast_view_inspector_ic_layout_below_content" />
+    <item android:drawable="@drawable/fast_view_inspector_ic_layout_bottom_sheet" />
+</selector>
